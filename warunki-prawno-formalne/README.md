@@ -1,0 +1,3 @@
+# Warunki prawno-formalne
+
+MedFLOW został zaprojektowany jako narzędzie informatyczne wspierające pracę specjalistów w zakresie dokumentacji sesji, analizy transkrypcji, generowania raportów oraz zarządzania danymi. Należy podkreślić, że MedFLOW **nie jest produktem medycznym** – nie służy do diagnostyki, leczenia ani monitorowania stanu zdrowia pacjentów, lecz wyłącznie do organizacji i dokumentacji spotkań. W związku z tym, system nie podlega przepisom dotyczącym wyrobów medycznych, takim jak Rozporządzenie (UE) 2017/745 (MDR), a jednocześnie musi spełniać rygorystyczne wymagania w zakresie ochrony danych osobowych, wynikające z Rozporządzenia (UE) 2016/679 (RODO) oraz krajowych regulacji.
