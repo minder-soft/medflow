@@ -8,3 +8,5 @@ Aby system MedFLOW mógł dostosować funkcjonalności do specyfiki wykonywanej 
   * Dla lekarzy pojawia się lista specjalizacji – użytkownik wybiera tę, która najlepiej odpowiada jego profilowi.
   * Jeśli nie odnajdzie odpowiedniej specjalizacji na liście, należy wybrać opcję „inne”.
   * W przypadku wyboru innych ról (np. psycholog), system może wyświetlić kombinację specjalizacji medycznych i psychologicznych, dzięki czemu ustawienia i generowane raporty będą odpowiednio dostosowane.
+
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>

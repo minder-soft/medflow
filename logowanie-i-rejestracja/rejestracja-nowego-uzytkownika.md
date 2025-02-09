@@ -7,3 +7,5 @@
   * **Adres e-mail:** Unikalny identyfikator użytkownika.
   * **Hasło:** Wybrane przez użytkownika hasło.
   * **Powtórzenie hasła:** Konieczne jest, aby wprowadzone hasło zostało powtórzone identycznie, co gwarantuje zgodność danych.
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>

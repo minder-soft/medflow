@@ -10,3 +10,5 @@ Sesję można rozpocząć na dwa sposoby:
   * Dzięki temu sesja od razu trafia do odpowiedniej grupy, co ułatwia organizację historii spotkań.
 
 Przed rozpoczęciem sesji należy nadać jej nazwę – może to być np. opis typu „Wizyta kontrolna” lub inny krótki opis charakteru spotkania.
+
+<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>

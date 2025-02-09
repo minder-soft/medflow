@@ -6,3 +6,5 @@
   Użytkownik zostaje przekierowany do zakładki ustawień, gdzie może:
   * Uzupełnić dane osobowe.
   * Skonfigurować opcje konta (m.in. dane kontaktowe, specjalizację, ustawienia konta firmowego, itp.).
+
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>

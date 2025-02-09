@@ -10,4 +10,4 @@ Witamy w systemie MedFLOW – nowoczesnym narzędziu stworzonym z myślą o uspr
 
 MedFLOW to kompleksowe rozwiązanie dla specjalistów, które dzięki intuicyjnemu interfejsowi oraz zaawansowanym funkcjom, pomaga skoncentrować się na kluczowych aspektach pracy – relacji z pacjentem oraz efektywnej analizie przeprowadzonych sesji. Rozpoczynając pracę z MedFLOW, zyskujesz narzędzie, które podnosi jakość świadczonych usług oraz ułatwia codzienne zadania administracyjne i dokumentacyjne.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>

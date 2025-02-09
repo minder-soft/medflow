@@ -15,3 +15,5 @@ Na ekranie Dashboard widoczne są kluczowe sekcje, które umożliwiają:
     * Użytkownik może tworzyć dedykowane grupy wizyt, przypisując do nich stałych pacjentów lub klientów.
   * **Szybka sesja:**
     * Opcja umożliwiająca natychmiastowe rozpoczęcie nowej sesji, która domyślnie zostanie przypisana do grupy sesji jednorazowych. W każdej chwili możliwe jest przeniesienie sesji do innej grupy, jeśli zajdzie taka potrzeba.
+
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
