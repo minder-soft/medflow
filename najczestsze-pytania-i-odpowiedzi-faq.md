@@ -168,3 +168,89 @@ Jak najbardziej. Użytkownicy mają możliwość dodawania **własnych szablonó
 * Tabelki lub pola do wypełnienia automatycznego przez system (np. dane pacjenta, fragmenty transkrypcji).
 * Logo gabinetu lub inne elementy graficzne.\
   Po przygotowaniu własnego szablonu (np. w pliku Word, który następnie można wgrać do MedFlow) raporty generowane są w podobny sposób jak raporty domyślne, z tą różnicą, że wypełniane są spersonalizowane sekcje, co znacząco oszczędza czas i ujednolica dokumentację.
+
+***
+
+#### 16. Jakie modele AI są używane w MedFlow?
+
+**Odpowiedź:**\
+Korzystamy z trzech głównych dostawców AI:
+
+* **OpenAI (np. GPT-4, GPT-4o, o1, o3-mini  i podobne warianty)** – głównie do generowania rozbudowanych podsumowań, raportów, korekt stylistycznych.
+* **Google Vertex AI (np. Gemini)** – do tłumaczeń i analizy słów kluczowych, sentymentu oraz integracji z chmurowymi usługami Google.
+* **Anthropic (Claude 3.5 Sonnet)** – do kreatywnych przekształceń krótszych tekstów, konstruowania pytań w ankietach lub interpretacji komentarzy.
+
+Każdy z tych modeli jest używany w określonych scenariuszach, w zależności od rodzaju zadania i wymagań (np. długość wypowiedzi, kontekst).
+
+***
+
+#### 17. Czy AI zastępuje decyzje specjalisty?
+
+**Odpowiedź:**\
+Nie, modele sztucznej inteligencji w MedFlow pełnią **wyłącznie rolę pomocniczą**. Generują podsumowania, sugerują interpretacje czy korekty stylistyczne, ale **nie podejmują** decyzji o charakterze medycznym, diagnostycznym ani terapeutycznym. Ostateczna odpowiedzialność za interpretację wyników i ewentualne wdrożenie zaleceń spoczywa zawsze na specjaliście korzystającym z platformy.
+
+***
+
+#### 18. W jaki sposób dane są przekazywane do modeli AI?
+
+**Odpowiedź:**\
+Zanim jakiekolwiek dane (np. fragmenty rozmów, wyniki ankiet) trafią do zewnętrznego modelu, są **anonimizowane** przez MedFlow. Oznacza to, że np. nazwiska, adresy, PESEL, nazwy miejscowości czy inne szczegółowe informacje zostają zaszyfrowane lub zastąpione metadanymi (np. `[pacjent_1]`). Dopiero tak przetworzony tekst jest wysyłany do API dostawcy AI (OpenAI, Google, Anthropic). Po wykonaniu zadania (generowanie podsumowania, korekty) wynik wraca do MedFlow, gdzie może być scalony z oryginalnym kontekstem, ale **bez** ujawniania dodatkowych danych modelowi AI.
+
+***
+
+#### 19. Czy model AI przechowuje dane pacjenta?
+
+**Odpowiedź:**\
+W większości wypadków polityka dostawców AI (OpenAI, Google, Anthropic) **nie** pozwala na długotrwałe gromadzenie treści przesyłanych przez klientów, a MedFlow dodatkowo stosuje anonimizację. W efekcie nawet gdyby wystąpiło czasowe buforowanie tekstu przez model, to i tak nie zawiera on żadnych identyfikujących informacji pacjenta. Dodatkowo, MedFlow kończy sesję po uzyskaniu odpowiedzi, dzięki czemu nie ma trwałego „śledzenia” danych przez sam model.
+
+***
+
+#### 20. Jak zapewniana jest zgodność z RODO?
+
+**Odpowiedź:**
+
+1. **Anonimizacja danych** – kluczowy mechanizm, który uniemożliwia modelom zewnętrznym dostęp do informacji pozwalających zidentyfikować pacjenta.
+2. **Szyfrowane połączenie (HTTPS/TLS)** – wszystkie przesyłane informacje są chronione przed nieuprawnionym przechwyceniem.
+3. **Serwery w UE** – MedFlow stara się kierować przetwarzanie na infrastrukturę w Unii Europejskiej tam, gdzie to możliwe, spełniając wymóg lokalizacji danych.
+4. **Umowy powierzenia** – z dostawcami AI zawierane są stosowne umowy (lub korzystamy z ich standardowych warunków), aby zapewnić zgodność z przepisami o ochronie danych.
+
+***
+
+#### 21. Co się dzieje z danymi pacjenta po zakończeniu sesji z AI?
+
+**Odpowiedź:**
+
+* **Plik audio**: nie jest w ogóle przechowywany, a jedynie tymczasowo przetwarzany do transkrypcji.
+* **Tekst transkrypcji**: pozostaje w bazie MedFlow na serwerach UE, dopóki użytkownik nie usunie lub nie zanonimizuje go w archiwum.
+* **Dane przesłane do AI**: były w formie zanonimizowanej i nie są dalej przechowywane przez model – tym bardziej, że np. OpenAI, Google i Anthropic zapewniają w swoich politykach wzmocnioną ochronę danych klientów, a MedFlow dodatkowo minimalizuje przesyłane fragmenty.
+
+***
+
+#### 22. Czy AI może popełnić poważne błędy w interpretacji danych?
+
+**Odpowiedź:**\
+Należy pamiętać, że AI generuje wyniki statystycznie poprawne, ale wciąż może wystąpić **błąd interpretacji** lub niewłaściwa sugestia, szczególnie przy nieprecyzyjnych danych. Dlatego kluczowe jest, by specjalista:
+
+1. Zawsze weryfikował wygenerowane rekomendacje i raporty.
+2. Nanosił korekty, gdy cokolwiek wyda się niezgodne z realiami sesji.\
+   Rolą AI jest **wspomaganie** – decyzje i ostateczne interpretacje należą do doświadczonych profesjonalistów.
+
+***
+
+#### 23. Czy w przyszłości dodacie inne modele AI?
+
+**Odpowiedź:**\
+MedFlow stale rozwija się wraz z postępem w dziedzinie sztucznej inteligencji. Jeśli pojawią się nowe, bezpieczne i wartościowe modele, które mogą przynieść korzyści specjalistom w branży medycznej i psychologicznej, rozważamy ich integrację. Wszystkie nowe integracje zawsze będą przebiegać z zachowaniem naszych zasad anonimowości i wysokich standardów ochrony danych.
+
+***
+
+#### 24. Gdzie mogę znaleźć dodatkowe informacje lub zgłosić problemy z AI?
+
+**Odpowiedź:**\
+Wszelkie sugestie, pytania czy problemy można kierować:
+
+1. **Bezpośrednio w aplikacji** – w panelu „Pomoc” lub „Kontakt”.
+2. **E-mail** – na adres wsparcia technicznego MedFlow, podany w dokumentacji.
+3. **Portal Pomocy** – w sekcji FAQ możesz przeszukać artykuły na temat AI, integracji i różnych przypadków użycia.\
+   Zespół MedFlow aktywnie reaguje na zgłaszane przypadki, starając się jak najszybciej rozwiązać ewentualne trudności i usprawnić działanie funkcji opartych na sztucznej inteligencji.
+

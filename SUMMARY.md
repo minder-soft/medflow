@@ -87,5 +87,6 @@
   * [Wymagania dotyczące komputera](wymagania-techniczne/wymagania-dotyczace-komputera.md)
   * [Wymagania dotyczące słuchawek (sesje zdalne)](wymagania-techniczne/wymagania-dotyczace-sluchawek-sesje-zdalne.md)
   * [Wymagania dotyczące mikrofonu konferencyjnego (sesje gabinetowe)](wymagania-techniczne/wymagania-dotyczace-mikrofonu-konferencyjnego-sesje-gabinetowe.md)
+* [Modele AI w MedFlow](modele-ai-w-medflow.md)
 * [Najczęstsze Pytania i Odpowiedzi (FAQ)](najczestsze-pytania-i-odpowiedzi-faq.md)
 * [Architektura MedFLOW w kontekście formalnoprawnych wymogów dotyczących rejestracji plików audio](architektura-medflow-w-kontekscie-formalnoprawnych-wymogow-dotyczacych-rejestracji-plikow-audio.md)
